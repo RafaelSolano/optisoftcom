@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de usuario</title>
+</head>
+
+<body>
+    <div style="text-align: right">
+        <a href="iniciarSesion.html">Inicio de sesión</a>
+        <a href="registrarUsuario.html">Registro usuario</a>
+    </div>
+
+    <header>
+        <a href="index.html" style="text-align: left">Inicio </a>
+    </header>
+
+    <main>
+        <h1 style="text-align: center">Registrar usuario nuevo</h1>
+
+        <div Style="
+            
+            width: 50%;
+            padding: 5px;
+            border: 1px solid;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            ">
+            <form action="/" Style="
+            
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+            justify-content: left;
+            align-items: left;">
+
+                <!--nombre -->
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre"></input>
+                <!--Tipo de documento -->
+                <div>
+                    <label for="tipo_documento">Tipo de documento</label>:</label>
+                    <input type="radio" id="tipo_documento" name="tipo_documentoCC">CC</input>
+                    <input type="radio" id="tipo_documento" name="tipo_documentoTI">TI</input>
+                    <input type="radio" id="tipo_documento" name="tipo_documentoRC">RC</input>
+
+                </div>
+                <!--numero de documento -->
+                <label for="numero_Documento">Numero de documento</label>
+                <input type="text" id="numero_documento" name="numero_documento" />
+                <!--fecha de nacimiento -->
+                <label for="fecha_nacimiento">Fecha de nacimiento</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" />
+                <!--telefono -->
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" name="telefono">
+                <!--email -->
+                <label for="email" id="email">Email:</label>
+                <input type="email" required="true" id="email" name="email" placeholder="correo@ejemplo.com">
+                <!--Contrasenia -->
+                <label for="password" id="password" name="password">Contraseña:</label>
+                <input type="password" required="true" id="password " name="password" />
+                <!--Confirmar Contrasenia -->
+                <label for="password" id="password" name="password">Confirmar Contraseña:</label>
+                <input type="password" required="true" id="password " name="password" />
+                <!--cbox terminos y condiciones-->
+                <div>
+                    <input type="checkbox" id="cboxTC" name="cboxTC">Terminos y condiciones</input>
+                </div>
+                <!--Botones Form -->
+                <div style="padding: 5px; display:flexbox; ">
+                    <!--btn Registrarse -->
+                    <button type="submit" name="btnRegistrar">Registrar</button>
+                    <!--btn cancelar -->
+                    <button type="reset" name="reset">Cancelar</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>
